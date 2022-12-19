@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,65 +9,69 @@
     <!-- Completa tu nombre -->
     <title>Miguel A. Carmona - 2ºDAW</title>
 
-    <style src="static/style.css"></style>
+    <link rel="stylesheet" href="static/style.css" type="text/css" />
 </head>
+
 <body>
 
     <!-- Completar html aqui -->
-    <div class="modal_list">
-        <header>Aplicación de dietas</header>
-        <main>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Sexo</th>
-                        <th>Edad</th>
-                        <th>Altura</th>
-                        <th>Peso</th>
-                        <th>Actividad</th>
-                        <th>IM Basal</th>
-                        <th>Calorías necesarias</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Francisco Romero</td>
-                        <td>hombre</td>
-                        <td>31</td>
-                        <td>198</td>
-                        <td>89</td>
-                        <td>moderada</td>
-                        <td>1427 kCal</td>
-                        <td>1712 kCal</td>
-                    </tr>
-                    <tr>
-                        <td>José Antonio Lara</td>
-                        <td>hombre</td>
-                        <td>46</td>
-                        <td>187</td>
-                        <td>85</td>
-                        <td>moderada</td>
-                        <td>1333 kCal</td>
-                        <td>1435 kCal</td>
-                    </tr>
-                    <tr>
-                        <td>Jeniffer López</td>
-                        <td>mujer</td>
-                        <td>45</td>
-                        <td>167</td>
-                        <td>56</td>
-                        <td>alta</td>
-                        <td>1256 kCal</td>
-                        <td>1943 kCal</td>
-                    </tr>
-                </tbody>
-            </table>
-            <button>Añadir cliente</button>
-        </main>
-        <footer>Francisco Romero&#169; 2022</footer>
+    <div class="middle_center">
+        <div id="main_list" class="modal">
+            <header>Aplicación de dietas</header>
+            <main>
+                <table class="default">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Sexo</th>
+                            <th>Edad</th>
+                            <th>Altura</th>
+                            <th>Peso</th>
+                            <th>Actividad</th>
+                            <th>IM Basal</th>
+                            <th>Calorías necesarias</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Francisco Romero</td>
+                            <td><span class="tag bg-blue">hombre</span></td>
+                            <td>31</td>
+                            <td>198</td>
+                            <td>89</td>
+                            <td><span class="tag bg-grey">moderada</dispanv></td>
+                            <td>1427 kCal</td>
+                            <td>1712 kCal</td>
+                        </tr>
+                        <tr>
+                            <td>José Antonio Lara</td>
+                            <td><div class="tag bg-blue">hombre</div></td>
+                            <td>46</td>
+                            <td>187</td>
+                            <td>85</td>
+                            <td><span class="tag bg-grey">moderada</span></td>
+                            <td>1333 kCal</td>
+                            <td>1435 kCal</td>
+                        </tr>
+                        <tr>
+                            <td>Jeniffer López</td>
+                            <td><span class="tag bg-pink">mujer</span></td>
+                            <td>45</td>
+                            <td>167</td>
+                            <td>56</td>
+                            <td><span class="tag bg-grey">alta</span></td>
+                            <td>1256 kCal</td>
+                            <td>1943 kCal</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="green mt-25">Añadir cliente</button>
+            </main>
+            <footer>Miguel Carmona&#169; 2022</footer>
+        </div>
     </div>
 
     <script src="static/app.js"></script>
 </body>
+
 </html>
