@@ -39,13 +39,16 @@
                             <td>31</td>
                             <td>198</td>
                             <td>89</td>
-                            <td><span class="tag bg-grey">moderada</dispanv></td>
+                            <td><span class="tag bg-grey">moderada</dispanv>
+                            </td>
                             <td>1427 kCal</td>
                             <td>1712 kCal</td>
                         </tr>
                         <tr>
                             <td>José Antonio Lara</td>
-                            <td><div class="tag bg-blue">hombre</div></td>
+                            <td>
+                                <div class="tag bg-blue">hombre</div>
+                            </td>
                             <td>46</td>
                             <td>187</td>
                             <td>85</td>
@@ -63,11 +66,80 @@
                             <td>1256 kCal</td>
                             <td>1943 kCal</td>
                         </tr>
+                        <tr>
+                            <td>Miguel Carmona</td>
+                            <td>
+                                <div class="tag bg-blue">hombre</div>
+                            </td>
+                            <td>46</td>
+                            <td>187</td>
+                            <td>85</td>
+                            <td><span class="tag bg-grey">moderada</span></td>
+                            <td>1333 kCal</td>
+                            <td>1435 kCal</td>
+                        </tr>
+                        <tr>
+                            <td>Elena Cerezo</td>
+                            <td><span class="tag bg-pink">mujer</span></td>
+                            <td>48</td>
+                            <td>157</td>
+                            <td>54</td>
+                            <td><span class="tag bg-grey">alta</span></td>
+                            <td>1256 kCal</td>
+                            <td>1943 kCal</td>
+                        </tr>
                     </tbody>
                 </table>
-                <button class="green mt-25">Añadir cliente</button>
+                <button class="green mt-25 new_client">Añadir cliente</button>
             </main>
             <footer>Miguel Carmona&#169; 2022</footer>
+        </div>
+    </div>
+
+    <div id="new_client" class="middle_center display_none">
+        <div class="modal">
+            <header>Nuevo cliente</header>
+            <main>
+                <form action="" id="form_new_client" method="get" class="flex">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre">
+                    </div>
+                    <div>
+                        <label>Sexo:</label>
+                        <div class="group">
+                            <input type="radio" name="sexo" id="sexo_hombre" value="hombre">
+                            <label for="sexo_hombre">Hombre</label>
+                            <input type="radio" name="sexo" id="sexo_mujer" value="mujer" checked>
+                            <label for="sexo_mujer">Mujer</label>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="edad">Edad:</label>
+                        <input type="number" id="edad" name="edad" value="20" min="15" max="99">
+                    </div>
+                    <div>
+                        <label for="altura">Altura (cm):</label>
+                        <input type="number" id="altura" name="altura" value="165" min="130" max="240">
+                    </div>
+                    <div>
+                        <label for="peso">Peso (kg):</label>
+                        <input type="number" id="peso" name="peso" value="65" min="45" max="145">
+                    </div>
+                    <div>
+                        <label for="actividad">Nombre:</label>
+                        <select id="actividad" name="actividad">
+                            <option value="Sedentaria">Suave o sedentaria</option>
+                            <option value="Moderada">Moderada</option>
+                            <option value="Alta">Alta</option>
+                        </select>
+                    </div>
+                </form>
+            </main>
+            <footer>
+                <button type="submit" form="form_new_client" class="green bordered">Añadir Nuevo</button>
+                <button class="close">Volver atrás</button>
+            </footer>
         </div>
     </div>
 
