@@ -33,10 +33,8 @@ body {
 .mt-25 {
     margin-top: 25px !important;
 }
-.ddisplay_none {
-    display: none;
-}
 .display_none {
+    display: block;
     top: -100% !important;
 }
 
